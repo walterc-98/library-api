@@ -3,8 +3,8 @@ package com.example.libraryapi.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Books")
-public class Books {
+@Table(name = "Book")
+public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,10 +14,10 @@ public class Books {
     private String author;
     private String isbn;
 
-    public Books() {
+    public Book() {
 
     }
-    public Books(String title, String author, String isbn) {
+    public Book(String title, String author, String isbn) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
